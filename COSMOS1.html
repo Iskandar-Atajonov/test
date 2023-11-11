@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS</title>
+    <style>
+        html{
+          scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar{
+          width: 15px;
+          cursor: none;
+        }
+        ::-webkit-scrollbar-track{
+          background: black;
+          cursor: none;
+        }
+        ::-webkit-scrollbar-thumb{
+          border-radius: 10px;
+          height: 60px;
+          background: linear-gradient(135deg,transparent 25%,rgb(0, 255, 0))
+         }
+         ::-webkit-scrollbar-thumb:hover{
+          background: linear-gradient(135deg,transparent 25%,rgb(0, 0, 255));
+         }
+body{
+  z-index: 1;
+    background-image: url(https://www.nawpic.com/media/2020/space-4k-nawpic-10.jpg);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+    cursor: none;
+    background-attachment: fixed;
+     }  
+     body::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      content: "";
+      height: 31150px;
+      z-index: -1;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+     }
+     #o,#p,#q,#r,#s,#t,#u,#v,#w,#x,#y,#z,#m{
+          background: linear-gradient(250deg,blue,red);
+          cursor: none;
+          -webkit-background-clip:text;
+          /* margin-top: 150px; */
+          color: transparent;
+        }
+     h1,h2,h3,h4,a,#warm{
+      cursor: none;
+     }
+  #cursor{
+    width: 50px;
+    height: 50px;
+    -webkit-background-clip:content-box;
+    border: 5px  dotted;
+    border-color: linear-gradient(250deg,blue,orange);
+    cursor: none;
+    position: absolute;
+    transform: translate(-45%,-40%);
+    pointer-events:none;
+    z-index: 1001;
+    /* border: 5px midnightblue solid; */
+    border-radius: 50%;
+    backdrop-filter: contrast(200%);
+  }
+  #a{
+    cursor: none;
+  }
+  select:hover{
+      cursor: pointer;
+      background-color: rgb(0, 0, 0);
+      color: rgb(131, 255, 255);
+   }
+
+   fieldset{
+      border-radius: 20px;
+   }
+ 
+   a{
+    transition: 2s;
+   }
+    #jam{
+      border-radius: 50%;
+    }
+    #ram {
+      border-radius: 50%;
+    }
+
+     h1{
+        color:aqua;
+        font-size: 60px;
+        text-align: center;
+     }
+     h2{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+     }
+     input{
+         background-color: aqua;
+         background-position: center;
+         border-radius: 20px;
+         color: black;
+         font-size: 40px;
+         font-family: 'Courier New', Courier, monospace;
+         font-weight: bold;
+     }
+      fieldset button:hover{
+        cursor: pointer;
+        background-color: black;
+        color: aqua;
+      }
+     h3{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+     }
+     #yummy:hover{
+     cursor: pointer;
+     background-color: black;
+     color: aqua;
+     list-style: none;
+     list-style-type: none;
+     list-style-position: outside;
+     } 
+     img{
+        border-radius: 20px;
+        margin: 15px;
+     }
+    #ram{
+      border-radius: 60%;
+    }
+     select{
+      background-color: aqua;
+      border-radius: 10px;
+      font-size: 40px;
+      text-align: center;
+     }
+     h1{
+      font-family: 'Courier New', Courier, monospace;
+     }
+     #gut{
+      border-radius: 20px;
+      background-color: aqua;
+      color: grey;
+     }
+     
+     iframe{
+      border-radius: 20px;
+     }
+     button{
+      background-color: aqua;
+      padding: 5px;
+      border-radius: 10px;
+      font-size:40px ;
+     }
+     div{
+      color: aliceblue;
+      font-size: 40px;
+     }
+             
+        #warm{
+          left: 0;
+          top: 50px;
+          display: grid;
+          text-align: right;
+        position: sticky;
+        color: black;
+        }
+       form{
+        text-align: right;
+       }
+         #mane{
+          text-align:left;
+          position: fixed;
+         }                 
+        #warm:hover{
+            background-color: black;
+            color: aqua;
+            text-align: match-parent;
+          }
+          a{
+            font-size: 30px;
+            color: aliceblue;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30px;
+          }
+        .lname a{
+          margin-top: 50px;
+        transition: 5s;
+         cursor: pointer;
+        }
+        a:hover{
+        transition: 1s;
+        border-bottom: 5px rgb(13, 0, 192) solid;
+        animation: name linear 2s;
+        }
+        #loader{
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: fixed;
+          background: black url(reloader.gif) no-repeat center center;
+          width: 100%;
+          height: 100vh;
+          z-index: 1000;
+        }
+        img{
+          width: 100%;
+          height: 5%;
+        }
+        iframe{
+          width: 100%;
+        }
+        #me,#ve,#ye,#ma,#yu,#sa,#ur,#ne{
+          cursor: none;
+        }
+        select{
+          cursor: none;
+        }
+        .lname{
+          position: absolute;
+          /* backdrop-filter: blur(1500px); */
+          background: black;
+          right: 100%;
+          text-align: center;
+          z-index: 1;
+          height: 100vh;
+          border-radius: 20px;
+          width: 45%;
+          top: 0;
+          transition: 2s;
+        }
+        #btn{
+          position: absolute;
+          right: 95%;
+          transition: 1.5s;
+          cursor: none;
+          z-index: 1;
+          rotate: 90deg;
+          color: black;
+          padding-bottom: 10px;
+          background: none;
+          border: none;
+          outline: none;
+          top: 5px;
+        }
+        #name{
+          font-size: 50px;
+          top: 0;
+          color: aliceblue;
+        }
+        #cube{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    /* box-shadow: 0px 0px 20px blue; */
+    transform:rotateX(-30deg);
+    animation: b 5s linear infinite;
+  }
+  #name{
+    margin-left: 300px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    /* box-shadow: 0px 0px 20px blue; */
+    transform:rotateX(-30deg);
+    animation: b 5s linear infinite;
+  }
+  #name div span{
+    /* box-shadow: 15px 15px 50px blue; */
+    position: absolute;
+    filter: saturate(100%);
+    top: 0;
+    /* border-radius: 20px; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,rgb(255, 0, 187) 100%);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+  }
+  #name div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  @keyframes b{
+    0%{
+        transform: rotateX(-30deg)  rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg)  rotateY(360deg);
+    }
+  }
+  #cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  #cube div span{
+    /* box-shadow: 15px 15px 50px blue; */
+    position: absolute;
+    filter: saturate(100%);
+    top: 0;
+    /* border-radius: 20px; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,rgb(0, 255, 0));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+  }
+  #n div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  #n{
+    margin-right: 300px;
+    /* margin-left: 300px; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    /* box-shadow: 0px 0px 20px blue; */
+    transform:rotateX(-30deg);
+    animation: b 5s linear infinite;
+  }
+  #n div span{
+    /* box-shadow: 15px 15px 50px blue; */
+    position: absolute;
+    filter: saturate(100%);
+    top: 0;
+    /* border-radius: 20px; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,blue);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+  }
+  #top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #171717;
+    transform: rotateX(90deg) translateZ(150px);
+  }
+   #top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 224, 0);
+    filter: blur(30px);
+    transform: translateZ(-380px);
+    box-shadow: 0 0 120px rgb(0, 120, 0),
+    0 0 200px green,
+    0 0 300px rgb(0, 110, 0),
+    0 0 400px rgb(0, 102, 0);
+  } 
+  #bottom{
+    position: absolute;
+    z-index: 1000;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: #0f0;
+    transform: rotateX(90deg) translateZ(-150px);
+  }
+  #top1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:0;
+    left: 0;
+    background-color:#171717;
+    transform: rotateX(90deg) translateZ(75px);
+  }
+  #bottom1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:0;
+    left: 0;
+    background-color:rgb(255, 0, 187);
+    transform: rotateX(90deg) translateZ(-75px);
+  }
+  #top1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    /* border: none; */
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(224, 0, 198);
+    filter: blur(30px);
+    transform: translateZ(-200px);
+    box-shadow: 0 0 120px rgb(227, 0, 189),
+    0 0 200px rgb(136, 0, 136),
+    0 0 300px rgb(96, 0, 88);
+  }
+  #top2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    /* border: none; */
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 224);
+    filter: blur(30px);
+    transform: translateZ(-150px);
+    box-shadow: 0 0 120px rgb(13, 0, 202),
+    0 0 200px rgb(22, 0, 148),
+    0 0 300px rgb(8, 0, 124),
+    0 0 400px rgb(0, 0, 124);
+  }
+
+  #top2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:0;
+    left: 0;
+    background-color:#171717;
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  #bottom2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:0;
+    left: 0;
+    background-color:blue;
+    transform: rotateX(90deg) translateZ(-50px);
+  }
+  #loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+    height: 100vh;
+    background: black;
+    position:fixed;
+  }
+  #span{
+    position: absolute;
+    top: 15px;
+    font-size: 50px;
+    color: aliceblue;
+  }
+    </style>
+    <link rel="stylesheet" href="Cosmos.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="loader">
+    <div id="n">
+      <div id="top2"></div> 
+      <div>
+      <span style="--i:0"></span>
+      <span style="--i:1"></span>
+      <span style="--i:2"></span>
+      <span style="--i:3"></span>
+      </div>
+       <div id="bottom2"></div> 
+  </div>
+  
+  <div id="cube">
+      <div id="top"></div>
+      <div>
+      <span style="--i:0"></span>
+      <span style="--i:1"></span>
+      <span style="--i:2"></span>
+      <span style="--i:3"></span>
+      </div>
+      <div id="bottom"></div>
+  </div>
+  <div id="name">
+    <div id="top1"></div>
+    <div>
+    <span style="--i:0"></span>
+    <span style="--i:1"></span>
+    <span style="--i:2"></span>
+    <span style="--i:3"></span>
+    </div>
+    <div id="bottom1"></div>
+</div>
+</div>
+
+    <div class="lname">
+<a href="#a" id="o">\\\QUYOSH SISTEMASI///</a><br>
+<a href="#b" id="p">SIZGA QAYSI SAYYORA YOQADI ?</a><br>
+<a href="#c" id="q">\\\ YER ATROFIDA AYLANADIGAN SAYYORA ///</a><br>
+<a href="#d" id="r">\\\ ASTEROID, METIORID, QOMETA ///</a><br>
+<a href="#e" id="s">\\\ NEGA OSMAN HAVO RANG ? ///</a><br>
+<a href="#f" id="t">\\\ NEGA SATURN BEL-BOG'LI ? ///</a><br>
+<a href="#g" id="u">\\\ YERNING SUNIY YO'LDOSHI ///</a><br>
+<a href="#h" id="w">\\\ GALLAKTIKA ///</a><br>
+<a href="#i" id="x">\\\ QORA TUYNUK ///</a><br>
+<a href="#j" id="y">\\\ KOSMIK KEMA ///</a><br>
+<a href="#k" id="z">\\\ QUYOSH ///</a><br>
+<a href="#l" id="m">\\\ FAKTLAR ///</a><br>
+    </div>
+    <button id="btn">|||</button>
+  
+<h1>KOSMOS</h1>
+<!-- <a href="#o"><input type="submit" id="warm" value="TEPAGA"></a> -->
+      <h2 id="a">\\\QUYOSH SISTEMASI///</h2>
+    <h3>Hamma quyosh sistemasini bilsa kerak chunki bizning yer quyosh sistemasida 3-bo'lib joylashga bo'lib faqat bizda hayot mavjud va quyosh sistemasida 8 ta sayyora bor bular "MERQURIY" <img src="https://img.freepik.com/free-vector/mercury-planet-space-background_1308-79886.jpg?w=2000" height="50px" width="50px">, "VENERA" <img src="https://a-z-animals.com/media/2022/07/iStock-1199281415.jpg">, "YER" <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg" height="50px" width="50px">, "MARS" <img src="https://cdn.mos.cms.futurecdn.net/kCbvedK262UGLXCLFeW5oS.jpg" height="40px" width="65px">, "YUPITER" <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hubble_Ultraviolet_View_of_Jupiter.jpg/322px-Hubble_Ultraviolet_View_of_Jupiter.jpg" height="50px" width="55px">, "SATURN" <img src="https://img.freepik.com/premium-photo/saturn-planet-with-night-view-rising-sun-realistic-view-solar-system-3d-rendering_508524-249.jpg?w=2000" height="50px" width="50px">, "URAN" <img src="https://static.zarnews.uz/crop/a/2/720__80_a20946dbafc0d4223f598c63c255ce95.jpg?img=self&v=1588977760" height="40px" width="55px">, "NEPTUN" <img src="https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg" height="40px" width="55px"> lekin olimlar aniqlashicha "PLUTON" sayyoralig sifati yo'q ekan. Quyosh sistemasidagi eng katta sayyora bu "YUPITER" va eng kichigi "MERQURIY". </h3>
+      <br>   
+      </form>
+    <img src="https://img.freepik.com/free-vector/solar-system-background_1284-12725.jpg?w=2000" height="1000px" width="1200px">
+      <hr>
+    <h2 id="b">SIZGA QAYSI SAYYORA YOQADI ?</h2>
+     <fieldset>
+
+   <legend> <select>
+      <option name="merquriy" value="merquriy" >MERQURIY<img src="https://img.freepik.com/free-vector/mercury-planet-space-background_1308-79886.jpg?w=2000" height="50px" width="50px"></option>
+      <option name="venera" value="venera" >VENERA</option>
+      <option name="yer" value="yer" selected>YER</option>
+      <option name="mars" value="mars" >MARS</option>
+      <option name="yupiter" value="yupiter" >YUPITER</option>
+      <option name="saturn" value="saturn" >SATURN</option>
+      <option name="uran" value="uran" >URAN</option>
+      <option name="neptun" value="neptun" >NEPTUN</option>
+    </select>
+    </legend>
+    <h1>\\\ SAYYORALAR ///</h1>
+    <div id="tit">
+    <button id="me" onclick="me()"><i>MERQURIY</i></button>
+    <i><div id="mer"></div></i>
+    <button id="ve" onclick="ve()"><i>VENERA</i></button>
+    <i><div id="ven"></div></i>
+    <button id="ye" onclick="ye()"><i>YER</i></button>
+    <i><div id="yer"></div></i>
+    <button id="ma" onclick="ma()"><i>MARS</i></button>
+    <i><div id="mar"></div></i>
+    <button id="yu" onclick="yu()"><i>YUPITER</i></button>
+    <i><div id="yup"></div></i>
+    <button id="sa" onclick="sa()"><i>SATURN</i></button>
+    <i><div id="sat"></div></i>
+    <button id="ur" onclick="ur()"><i>URAN</i></button>
+    <i><div id="ura"></div></i>
+    <button id="ne" onclick="ne()"><i>NEPTUN</i></button>
+    <i><div id="nep"></div></i> 
+    <script>
+      btn.onclick = ()=>{
+        let n = document.createElement("span")
+        n.innerHTML = "\u00d7"
+        n.id = "span"
+        btn.innerHTML = ""
+        document.getElementById("btn").appendChild(n)
+        document.getElementById("btn").style.right = "60%"
+        document.querySelector(".lname").style.right = "57%"
+        let s = new Navigator;
+        console.log(s.appVersion())
+      }
+      document.getElementById("btn").addEventListener("click",(e)=>{
+       if(e.target.tagName === "SPAN"){
+       document.getElementById("name").remove()
+       document.getElementById("btn").innerHTML = "|||"
+       document.getElementById("btn").style.right = "95%"
+       document.querySelector(".lname").style.right = "100%"
+       }
+      })
+    function me(){
+      const me = document.getElementById("me")
+      mer.innerHTML = ` Merquriy bu quyoshga eng yaqin sayyora bo'lib uning 1 kuni yerdagi 88 kunga teng `
+    }
+
+    function ve() {                                                                                                         
+      const ve = document.getElementById("ve")
+      ven.textContent = ` Venera bu quyosh sistemasidagi 2-sayyoradir.Unda briliantlar yomg'iri bo'ladi.  `
+  }
+  function ye() {
+      const ye = document.getElementById("ye")
+      yer.textContent = ` Yer bu quyosh sistemasidagi 3-sayyora.Unda hayot bor. `
+  }
+  function ma() {
+      const ma = document.getElementById("ma")
+      mar.textContent = ` Mars bu yerga eng yaqin bo'lgan sayyoradir.Olimlar anqilashicha u yerda hayot bo'lishi mumkin. `
+  }
+  function yu() {
+      const yu = document.getElementById("yu")
+      yup.textContent = ` Yupiter bu quyosh sistemasidagi 5-sayyora bo'lib u gasdan tashkil topgan. `
+  }
+  function sa() {
+      const sa = document.getElementById("sa")
+      sat.textContent = ` Saturn bu quyosh sistemasidagi 6-sayyora bo'lib u sistemadagi yagona bel-bog'i katta sayyoradir. `
+  }
+  function ur() {
+      const ur = document.getElementById("ur")
+      ura.textContent = ` Uran bu quyosh sistemasidagi 7-sayyoradir, u muzdan tashkil topgan `
+  }
+  function ne() {
+      const ne = document.getElementById("ne")
+      nep.textContent = ` Neptun bu urandan keyinki va oxirgi sayyoradir,u ham muzdan iborat `
+  }</script>
+  </fieldset>
+        </div>
+    <hr>
+    <h2 id="c">\\\ YER ATROFIDA AYLANADIGAN SAYYORA ///</h2>
+     <h3>Hamma yer atrofida aylanadigan sayyorani bilsa kerak chunki u yerga yaqin va har kuni kechqurun ko'rinadi va u "OY"dir.U yerni 1 oyda aylanib chiqadi.Har oyning 15-kunida "OY" <img src="https://thumbs.dreamstime.com/b/full-moon-rising-over-empty-ocean-night-copy-space-63676500.jpg" height="40px" width="50px"> toliq bo'ladi. </h3>
+     <img src="http://cdn.beta.qalampir.uz/uploads/NB/f_vHam3kiKs4sY8ColoCCLDaykgUldoz.jpg" height="900px" width="1200px">
+       <hr>
+       <h2 id="d">\\\ ASTEROID, METIORID, QOMETA ///</h2>
+       <h3>
+        Bizning yerdan keyin asteroidlar qobig'i bor.Bu qobig' yerdan keyinki aylanayotgan narsadir bu qobig' saturnni o'rab turgan asteroidlardan iborat.Bu qobig' asteroid, qometa, metioridlardan iborat shuning uchun ham bizning sayyora havfli. 
+       </h3>
+       <img src="https://d.newsweek.com/en/full/2027411/asteroid.jpg?w=1600&h=1600&q=88&f=443ec7ab47eff4a3c2085efb3a9c56a0" height="1200px" width="1200px" alt="asteroid">
+       <h3>Manabu asteroid, manashunaqa asteroid yerga ham tushgan. Bu voqea dinozavrlar vaqtida bo'lgan.</h3>
+       <img src="https://images.hindustantimes.com/tech/img/2022/11/12/960x540/asteroid-6054186_1920_1659586399339_1668231327558_1668231327558.jpg" height="680px" width="1200px">
+       <hr>
+     <h2 id="e">\\\ NEGA OSMAN HAVO RANG ? ///</h2>
+     <h3>Sizlarda nega osmon havo rangda degan savol tug'ulganmi ? Tug'ulgan bo'lsa javobi yerning ozon qatlamiga quyosh nuri tushadi va ozon qatlami quyosh nuri bilan tutashib havo rang tus oladi</h3>
+   <img src="https://us.blu-raydisc.com/wp-content/uploads/2017/03/shutterstock_306159347-1-900x600.jpg" height="1000px" width="1200px">
+<hr>
+<h2 id="f">\\\ NEGA SATURN BEL-BOG'LI ? ///</h2>  
+<h3> Chunki avval "SATURN" ham "YUPITER" kabi sayyora bo'lgan lekin uning tortish kuchi juda yaxshi bo'lgan keyin uning yaqinida bir sayyoraga asteroid kelib tushgan va u portlab ketgan va uni "SATURN"<img src="https://img.freepik.com/premium-photo/saturn-planet-with-night-view-rising-sun-realistic-view-solar-system-3d-rendering_508524-249.jpg?w=2000" height="50px" width="50px"> tortib olgan va o'ziga bel-bog' qilgan. </h3> 
+<img src="https://img.freepik.com/premium-photo/saturn-planet-with-night-view-rising-sun-realistic-view-solar-system-3d-rendering_508524-249.jpg?w=2000" height="1200px" width="1200px"><br>
+<input type="text" placeholder="Bu sizga yoqdimi ?" width="50px" height="20px" id="gut" >
+<button onclick="fun()" id="yummy">YUBORISH</button>
+<div id="ese"></div>
+<script>
+  function fun(){
+   alert("ETIBOINGIZ UCHUN RAXMAT!!!!!!!!!")
+   ese.innerHTML = ` ETIBORINGIZ UCHUN RAXMAT!!!!!!!!! `
+  }  
+</script>
+<div class="icon icon-offline" jstcache="0" style="visibility: hidden;"></div>
+<!--yer-->
+<hr>
+<h2 id="g">\\\ YERNING SUNIY YO'LDOSHI ///</h2>
+<h3>Yerning suniy yo'ldoshi nima degani o'zi degan savol sizda bormi ? Bor bo'lsa unga javoban yerni kuzatib turuvch qurilma desa yanglishmagan bo'laman chunki u yerni kuzatib ob-havodan yoki telefon orqli gaplashish va internetdan foydalanish uchun kerak bo'ladi.Uni kosmosga chiqarish uchun raketalardan foydalaniladi va hozida yerni 10 dan ortiq suniy yo'ldoshlari bor.</h3>
+<img src="https://storage.kun.uz/source/5/oiMAJ5hzCusSDIu0oYLNXDTVfMh6zDY1.jpg" height="650px" width="1200px">
+<hr>
+<h2 id="h">\\\ GALLAKTIKA ///</h2>
+<h3>Gallaktika bu quyosh sistemasiga oxshagan katta sistema va unda minlab sistemalar aylanadi.Kosmosda minlab gallaktikalar mavjud.Gallaktika minglab sistemalarni o'z o'qida aylantiradi.</h3>
+<img src="https://c4.wallpaperflare.com/wallpaper/61/844/888/the-andromeda-galaxy-in-space-milky-way-illustration-wallpaper-preview.jpg" height="1000px" width="1200px">
+<hr>
+<h2 id="i">\\\ QORA TUYNUK ///</h2>
+<h3>Qora tuynuk bu bir yulduz portlashidan hosil bo'ladigan narsa.Qora tuynuk bir yulduz portlashidan hosil bo'ladi va u hamma narsani yutib ketadi va uning oxiri <u>yo'q</u>. </h3>
+<img src="https://yuz.uz/imageproxy/1200x/https://yuz.uz/file/news/53ca0a5e71d48315aff06706f84b5d7e.jpeg" height="700px" width="1200px">
+<h3>Manabu haqiqiy qora tuynuk va u ameriqalilar tomonidan topilgan</h3>
+<iframe height="900px" width="1200px" src="https://www.youtube.com/embed/VdDUqYyIYts" title="KOINOTNING SIRLI HODISASI - QORA TUYNUKLAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+<h2 id="j">\\\ KOSMIK KEMA ///</h2>
+<h3>Kosmiq kema bu yerdan kosmosga olibchiqadiga kema va u bilan birga ko'plab odamlar chiqadi.Ular kosmosga sayyohat qiladilar va o'rganadilar.Hamma yerdan tashqarida gravitatsi yo'qligini bilsa kerak shuning uchun ham kosmosga chiqqan odam kosmiq kemada uchib yuradi. </h3>
+<img src="http://storage.kun.uz/source/1/jK-LSNj9sNfHWqUVmfjONCjQIak7jhWs.jpg" height="700px" width="1200px">
+<h3>Manabu "LEXUS" kompaniyasi ishlab chiqqan loiha.Uni kelajakishlab chiqarish ko'zda tutilgan</h3>
+<hr>
+<h2 id="k">\\\ QUYOSH ///</h2>
+<h3>"QUYOSH" o'zi nima ? "QUYOSH" bu yerga yaqin eng 1-yulduzdir va uning rangi oq.Uning yaqiniga borishning iloji yo'q.Unda dog'lar bor. </h3>
+<img src="https://spaceplace.nasa.gov/gallery-sun/en/solar-flare.en.jpg" height="700px" width="1200px">
+<hr>
+<h1 id="l">\\\ FAKTLAR ///</h1>
+<h3>Birinchi supermassiv qora tuynukni Amerika <img src="https: //upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/2048px-United-states_flag_icon_round.svg.png" height="40px" width="40px"> topgan.</h3>
+<iframe height="800px" width="1200px" src="https://www.youtube.com/embed/oEKDDgOur8I" title="SIRLI KOINOT HAQIDA AQL BOVAR QILMAS FAKTLARI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>SPACE</iframe>
+
+<hr>
+<script>                                                                                                                                                                          
+  window.addEventListener("load",()=>{
+    // document.getElementById("loader").style.display = "none"
+    // document.body.style.cursor = "load"
+    if(window.navigator.onLine){
+  document.getElementById("loader").style.display = "none"
+}
+  else{
+    document.getElementById("loader").style.display = "flex"
+  }
+  })                             
+  window.addEventListener("mousemove",(e)=>{
+    document.getElementById("cursor").style.top = e.pageY + "px";
+    document.getElementById("cursor").style.left = e.pageX + "px";
+  })
+  // console.log(window.scrollY);
+</script> 
+<script src="js.js"></script> 
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.getElementById("k"), {
+		max: 25,
+		speed: 400,
+    glare: true,
+    "max-glare":1, 
+	});
+</script>
+<br> 
+
+<!-- <path d="M1152 704q0 185 -131.5 316.5t-316.5 131.5t-316.5 -131.5t-131.5 -316.5t131.5 -316.5t316.5 -131.5t316.5 131.5t131.5 316.5zM1664 -128q0 -52 -38 -90t-90 -38q-54 0 -90 38l-343 342q-179 -124 -399 -124q-143 0 -273.5 55.5t-225 150t-150 225t-55.5 273.5 t55.5 273.5t150 225t225 150t273.5 55.5t273.5 -55.5t225 -150t150 -225t55.5 -273.5q0 -220 -124 -399l343 -343q37 -37 37 -90z"></path> -->
+</body>
+</html>
